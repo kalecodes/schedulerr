@@ -49,8 +49,6 @@ function timeAudit() {
     //---8 am time audit
     function timeAudit1() {
         var taskHour = hour1.attr("hour");
-        console.log(currentTime);
-        console.log(taskHour);
 
         if (taskHour < currentTime) {
             $("#hr-1 .description").removeClass("present");
@@ -69,8 +67,6 @@ function timeAudit() {
     //--9am time audit
     function timeAudit2() {
         var taskHour = hour2.attr("hour");
-        console.log(currentTime);
-        console.log(taskHour);
 
         if (taskHour < currentTime) {
             $("#hr-2 .description").removeClass("present");
@@ -89,8 +85,6 @@ function timeAudit() {
     //--10am time audit
     function timeAudit3() {
         var taskHour = hour3.attr("hour");
-        console.log(currentTime);
-        console.log(taskHour);
 
         if (taskHour < currentTime) {
             $("#hr-3 .description").removeClass("present");
@@ -109,8 +103,6 @@ function timeAudit() {
     //--11am time audit 
     function timeAudit4() {
         var taskHour = hour4.attr("hour");
-        console.log(currentTime);
-        console.log(taskHour);
 
         if (taskHour < currentTime) {
             $("#hr-4 .description").removeClass("present");
@@ -129,8 +121,6 @@ function timeAudit() {
     //--12pm time audit 
     function timeAudit5() {
         var taskHour = hour5.attr("hour");
-        console.log(currentTime);
-        console.log(taskHour);
 
         if (taskHour < currentTime) {
             $("#hr-5 .description").removeClass("present");
@@ -149,8 +139,6 @@ function timeAudit() {
     //---1 pm time audit
     function timeAudit6() {
         var taskHour = hour6.attr("hour");
-        console.log(currentTime);
-        console.log(taskHour);
 
         if (taskHour < currentTime) {
             $("#hr-6 .description").removeClass("present");
@@ -169,8 +157,6 @@ function timeAudit() {
     //--2 pm time audit
     function timeAudit7() {
         var taskHour = hour7.attr("hour");
-        console.log(currentTime);
-        console.log(taskHour);
 
         if (taskHour < currentTime) {
             $("#hr-7 .description").removeClass("present");
@@ -189,8 +175,6 @@ function timeAudit() {
     //--3 pmm time audit
     function timeAudit8() {
         var taskHour = hour8.attr("hour");
-        console.log(currentTime);
-        console.log(taskHour);
 
         if (taskHour < currentTime) {
             $("#hr-8 .description").removeClass("present");
@@ -209,8 +193,6 @@ function timeAudit() {
     //--4 pm time audit 
     function timeAudit9() {
         var taskHour = hour9.attr("hour");
-        console.log(currentTime);
-        console.log(taskHour);
 
         if (taskHour < currentTime) {
             $("#hr-9 .description").removeClass("present");
@@ -229,8 +211,6 @@ function timeAudit() {
     //--5 pm time audit 
     function timeAudit10() {
         var taskHour = hour10.attr("hour");
-        console.log(currentTime);
-        console.log(taskHour);
 
         if (taskHour < currentTime) {
             $("#hr-10 .description").removeClass("present");
@@ -249,8 +229,6 @@ function timeAudit() {
     //---6 pm time audit
     function timeAudit11() {
         var taskHour = hour11.attr("hour");
-        console.log(currentTime);
-        console.log(taskHour);
 
         if (taskHour < currentTime) {
             $("#hr-11 .description").removeClass("present");
@@ -269,8 +247,6 @@ function timeAudit() {
     //--7 pm time audit
     function timeAudit12() {
         var taskHour = hour12.attr("hour");
-        console.log(currentTime);
-        console.log(taskHour);
 
         if (taskHour < currentTime) {
             $("#hr-12 .description").removeClass("present");
@@ -305,6 +281,8 @@ function timeAudit() {
 timeAudit();
 
 //-------------------------End hour audit------------------------
+
+
 
 //processing click event to save task description
 $(".saveBtn").on("click", function() {

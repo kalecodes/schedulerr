@@ -2,6 +2,20 @@
 $(document).ready(function() {
     $("#currentDay").text( moment().format("[Today is] dddd, MMMM Do YYYY"));
     $("#currentTime").text( moment().format("[The time is] h:mm a"))
+
+    //load any save data from local storage
+    $("#hr-1 .description").val(localStorage.getItem("hr-1"))
+    $("#hr-2 .description").val(localStorage.getItem("hr-2"))
+    $("#hr-3 .description").val(localStorage.getItem("hr-3"))
+    $("#hr-4 .description").val(localStorage.getItem("hr-4"))
+    $("#hr-5 .description").val(localStorage.getItem("hr-5"))
+    $("#hr-6 .description").val(localStorage.getItem("hr-6"))
+    $("#hr-7 .description").val(localStorage.getItem("hr-7"))
+    $("#hr-8 .description").val(localStorage.getItem("hr-8"))
+    $("#hr-9 .description").val(localStorage.getItem("hr-9"))
+    $("#hr-10 .description").val(localStorage.getItem("hr-10"))
+    $("#hr-11 .description").val(localStorage.getItem("hr-11"))
+    $("#hr-12 .description").val(localStorage.getItem("hr-12"))
 });
 
 setInterval(function(){
@@ -10,6 +24,9 @@ setInterval(function(){
     })
 }, (15 * 1000));
 //----------------------------DO NOT TOUCH ABOVE THIS LINE----------------------------
+
+
+
 
 //creating hour attribute
 var hour1 = $("#hr-1").attr("hour", "08");
@@ -287,8 +304,8 @@ timeAudit();
 //processing click event to save task description
 $(".saveBtn").on("click", function() {
     console.log(this);
-    var descripText = $(this)
-    var time = $(this).attr("id")
+    var text = $(this).siblings(".description").val();
+    var time = $(this).parent().attr("id");
 
-    localStorage.setItem(time, text)
-})
+    localStorage.setItem(time, text);
+});
